@@ -56,7 +56,7 @@ class PetFriends:
                 'name': name,
                 'animal_type': animal_type,
                 'age': age,
-                'pet_photo': (pet_photo, open(pet_photo, 'rb'), 'image/jpeg')
+                'pet_photo': (pet_photo, open(pet_photo, 'rb'), 'images/cat1.jpg')
             })
         headers = {'auth_key': auth_key['key'], 'Content-Type': data.content_type}
 
