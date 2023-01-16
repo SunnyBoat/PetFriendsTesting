@@ -122,7 +122,7 @@ def test_get_all_pets_with_long_key(filter=''):
     assert 'Error parsing headers: &#x27;limit request headers fields size&#x27' in result
 
 def test_update_self_pet_info_with_invalid_id(name='Мурзик', animal_type='Котэ', age=5):
-    """Проверяем возможность обновления информации о питомце"""
+    """Проверяем возможность обновления информации о питомце с несуществующим id"""
 
     # Получаем ключ auth_key и список своих питомцев
     _, auth_key = pf.get_api_key(valid_email, valid_password)
